@@ -13,20 +13,20 @@ xpack/releases/download/v14.2.0-3/xpack-riscv-none-elf-gcc-14.2.0-3-linux-x64.ta
 This is the output of the installation
 
 
-![GCC Version](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/installation.png)
+![installation](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/installation.png)
 2. Unpack the Archive 
 ```bash
 tar -xvzf xpack-riscv-none-elf-gcc-14.2.0-3-linux-x64.tar.gz 
 ```
 This creates a folder named something like xpack-riscv-none-elf-gcc-14.2.0-3. 
-![GCC Version](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/extracting.png)
+![extraction](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/extracting.png)
 3. Add the Toolchain to Your PATH (Temporarily) 
 Run this command in your terminal to add the toolchain binaries to your current session’s 
 PATH:
 ```bash
 export PATH=$PWD/xpack-riscv-none-elf-gcc-14.2.0-3/bin:$PATH 
 ```
-![GCC Version](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/exporting_temporary.png)
+![temporary exporting](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/exporting_temporary.png)
 • Here, $PWD is your current directory where the extracted folder is located. 
 • This makes commands like riscv-none-elf-gcc accessible right away. 
 4. Check if Binaries Work 
@@ -37,4 +37,4 @@ riscv-none-elf-gdb --version
 ```
 Output of the verifications
 
-![GCC Version](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/exporting_permently_and_verification_of_binary_works.png)
+![compleate verification](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/exporting_permently_and_verification_of_binary_works.png)

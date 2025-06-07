@@ -1,10 +1,10 @@
-I have downloaded riscv-toolchain-rv32imac-x86_64-ubuntu.tar.gz. How exactly do I 
+# 🚀 I have downloaded riscv-toolchain-rv32imac-x86_64-ubuntu.tar.gz. How exactly do I 
 unpack it, add it to PATH, and confirm the gcc, objdump, and gdb binaries work? 
 
-1)AI Response: 
+## 1)AI Response: 
 Here's a clear, step-by-step guide on how to unpack the xPack RISC-V toolchain, add it to 
 your PATH, and verify that gcc, objdump, and gdb work properly:
-1. Download the Toolchain 
+###1. Download the Toolchain 
 (Use the latest version; for example:) 
 ```bash
 wget https://github.com/xpack-dev-tools/riscv-none-elf-gcc
@@ -14,13 +14,13 @@ This is the output of the installation
 
 
 ![installation](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/installation.png)
-2. Unpack the Archive 
+### 2. Unpack the Archive 
 ```bash
 tar -xvzf xpack-riscv-none-elf-gcc-14.2.0-3-linux-x64.tar.gz 
 ```
 This creates a folder named something like xpack-riscv-none-elf-gcc-14.2.0-3. 
 ![extraction](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/extracting.png)
-3. Add the Toolchain to Your PATH (Temporarily) 
+### 3. Add the Toolchain to Your PATH (Temporarily) 
 Run this command in your terminal to add the toolchain binaries to your current session’s 
 PATH:
 ```bash
@@ -29,7 +29,7 @@ export PATH=$PWD/xpack-riscv-none-elf-gcc-14.2.0-3/bin:$PATH
 ![temporary exporting](https://github.com/rakeshkumar1806/vsdRiscvSoc/blob/main/week%201/exporting_temporary.png)
 • Here, $PWD is your current directory where the extracted folder is located. 
 • This makes commands like riscv-none-elf-gcc accessible right away. 
-4. Check if Binaries Work 
+### 4. Check if Binaries Work 
 ```bash
 riscv-none-elf-gcc --version 
 riscv-none-elf-objdump --version 
